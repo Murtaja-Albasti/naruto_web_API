@@ -1,6 +1,6 @@
 <template>
 <div class=" mt-36">
-    <div class="grid justify-center grid-cols-5 gap-3">
+    <div class="grid justify-center md:grid-cols-5 grid-cols-3 gap-3">
         <!-- cards -->
         <div v-for="characters in character" :key="characters.id" class="card glass">
             <figure class="w-full">

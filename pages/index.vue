@@ -19,7 +19,7 @@
     </div>
 
     <div id="api" style="animation-delay: 50ms; transition-delay: 50ms;" class="mt-60 grid grid-rows-1 justify-center">
-        <div class=" flex justify-center">
+        <div class=" flex md:justify-center">
             <h1 class="text-7xl font-bold bg-gradient-to-r via-red-400 from-red-500 to-indigo-600 text-transparent inline-block bg-clip-text ">Animes pictures</h1>
         </div>
         <Api />
