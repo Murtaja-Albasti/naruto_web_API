@@ -2,15 +2,18 @@
 <div class=" mt-36">
     <div class="grid justify-center md:grid-cols-5 grid-cols-3 gap-3">
         <!-- cards -->
-        <div v-for="characters in character" :key="characters.id" class="card glass">
+        <NuxtLink
+         v-for="characters in character"
+          :key="characters.id"
+          :to="`/characters/${characters.id}`"
+           class="card glass hover:shadow-lg shadow-none transition-shadow duration-300 hover:shadow-gray-400">
             <figure class="w-full">
                 <img class="w-full":src="characters.images[0]" alt="car!" />
             </figure>
             <div class="card-body">
-                <h2 class="card-title">{{ characters.name }} {{ characters.id }}</h2>
-                <p> {{characters.personal.clan}}</p>
+                <h2 class="card-title">{{ characters.name }}</h2>
             </div>
-        </div>
+        </NuxtLink>
     </div>
 </div>
 </template>
@@ -19,6 +22,7 @@
 // https://api.disneyapi.dev/character
 // https://api.nekosapi.com/v3
 // https://dattebayo-api.onrender.com/characters
+
 
 import {
     ref
